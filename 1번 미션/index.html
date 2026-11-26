@@ -214,17 +214,17 @@
   <section class="panel" id="panel-qa" role="tabpanel" aria-labelledby="tab-qa">
     <div id="qaInput">
       <div class="card">
-        <p class="label">1. 어떤 설비 근처인가요?</p>
+        <label class="label" for="qaText">1. 직접 질문하기</label>
+        <textarea id="qaText" placeholder="예) 로봇이 갑자기 멈췄는데 다시 켜도 되나요?"></textarea>
+        <button class="primary" id="qaAsk">질문하기</button>
+      </div>
+      <div class="card">
+        <p class="label">2. 어떤 설비 근처인가요?</p>
         <div class="chips" id="qaEquip"></div>
       </div>
       <div class="card">
-        <p class="label">2. 자주 묻는 상황</p>
+        <p class="label">3. 자주 묻는 상황</p>
         <div class="quick" id="qaQuick"></div>
-      </div>
-      <div class="card">
-        <label class="label" for="qaText">3. 직접 질문하기</label>
-        <textarea id="qaText" placeholder="예) 로봇이 갑자기 멈췄는데 다시 켜도 되나요?"></textarea>
-        <button class="primary" id="qaAsk">질문하기</button>
       </div>
     </div>
     <div id="qaResult" aria-live="polite"></div>
